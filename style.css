@@ -1,0 +1,333 @@
+/* ................................................................................................................ */
+/* ...........Default setup....................................................................................... */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: blanchedalmond;
+
+    text-rendering: optimizeLegibility;
+    /* Mặc định là 16px */
+}
+/* ................................................................................................................... */
+/* ..........................Header............................................................................. */
+.logo{
+    width: 250px;
+    float: left;
+    margin: 0 3.5cm;
+    margin-left: -15px;
+}
+header{
+    background-image:   linear-gradient( rgba(218, 173, 134,0.7) ,rgba(251, 238, 193,0.7)) ,url("https://channel.mediacdn.vn/thumb_w/640/2019/7/24/photo-1-1563962010933887822013.jpg") ;
+    background-size: 515px;
+    height: 100vh;  
+    background-attachment: fixed;
+    /* view height */
+}
+
+/* ................................................................................................................ */
+/* ........................................................................................ */
+.main{
+    float: right;
+    
+    margin: 3cm 2cm;
+}
+.main li{
+    display: inline-block;
+    margin-right: 1cm;
+    
+}
+.main li a{
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: 800;
+    color:#2c2b2b ;
+    transition: border-bottom 0.1s;
+    padding: 5px 0;
+   
+    
+}
+.main li  :hover,
+.main li  :active{
+    border-bottom: 3px solid  #505050 ;
+    
+}
+/* ............................................................................................................................. */
+/* ..................................................... SỬ ỤNG LẠI.............................................................. */
+h2{
+    text-transform: uppercase;
+    color:#3b3b3b ;
+    letter-spacing: 1px;
+    font-size: 200%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -25px;
+
+}
+
+h2:after{
+    content: "  " ;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #817777 ;
+    margin: 4px  auto;
+}
+.p-long{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 150%;
+}
+.about-section{
+    padding: 50px;
+    background-image:linear-gradient( rgba(218, 173, 134,0.5) ,rgba(251, 238, 193,0.5) )  ;
+
+}
+
+/* ............................................................................................................................ */
+.clearfix{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.row{
+    max-width: 500px;
+    margin : 1cm 1cm;
+    
+    
+}
+/* .heading_main_box{
+    /* Dòng này dùng để căn chỉnh khối element khá hiệu quả 
+    position: absolute ;
+    top : 50% ;
+    left: 50%;
+    transform: translate(-50%,-30%); 
+    /* border: solid #505050; 
+    
+     
+} */
+.heading_main_box h1{
+    color:#333232 ;
+
+}
+h1{
+    font-size: 350%;
+    line-height: 150%;
+    margin-bottom: 60px;
+    margin-right: 60px;
+    color: #505050 ;
+    text-align: center;
+}
+
+
+ /* .button{
+    text-decoration: none;
+    color : white ;
+     background-color: #505050 ; 
+    text-transform: uppercase;
+    padding: 20px 30px ;
+    border-radius: 25px;
+    margin: 0 20px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+
+ } */
+.button1{
+    text-decoration: none;
+    color : rgb(247, 247, 247) ;
+     background-color: #505050 ; 
+    text-transform: uppercase;
+    padding: 20px 30px ;
+    border-radius: 25px;
+    margin: 0 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.button2{
+    text-decoration: none;
+    color : rgb(241, 231, 231) ;
+     background-color: #505050 ; 
+    text-transform: uppercase;
+    padding: 20px 30px ;
+    border-radius: 25px;
+    margin: 0 20px;
+    display: inline-block;
+    text-align: center;
+    transition: all .10s ;
+
+}
+.button a:hover{     
+    background-color: #3b2222;
+    color: black;
+
+}
+
+/* .button :hover,
+.button :active{
+    background-color: #ec9c91 ;
+
+
+} */
+.row2{
+    max-width: 1140px;
+    margin: 0 auto ; 
+    margin-top: 70px;
+
+}
+
+/* .row2 div {
+    padding: 20px 30px;
+    padding-right: 8cm;
+} */
+.col-1 {
+    width: 30%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 15px;
+  }
+.col-2 {
+    width: 30%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 15px;
+
+  }
+.col-3{
+    width: 30%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+.col-4{
+    width: 22%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+.col-5{
+    width: 22%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+.col-6{
+    width: 17%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+.col-7{
+    width: 17%;
+    float: left;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+
+
+
+.picture{
+    border-radius: 20px;
+    border:  5px solid #3a3838 ;
+    box-shadow:0px 2px 5px 5px    #837b7b ;
+    margin-top: 40px;
+    /* có 5 thuộc tính : x,y, độ mờ, độ phóng rộng , màu */
+    /* filter: brightness(100%) blur(0px); */
+    /* filter dùng để chỉnh hiệu ứng, blur là làm mờ, brightness là độ sáng */
+
+}
+
+[class *= col-] {
+    max-width: 1140 px;
+    float: left;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 30px;
+    position: relative;
+
+
+  }
+.picture-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-40%);
+    padding: 100px;
+    opacity: 0;
+    /* opacity là độ mờ */
+    
+}
+.row2  :hover .picture ,
+.row2 :active .picture  {
+    filter: brightness(80%) blur(3px);
+
+}
+.row2 div :hover.picture-title,
+.row2 div :active.picture-title{
+    transform: translate(-50%,-50%);
+    transition: 1s;
+    opacity: 1;
+
+}
+.product{
+    margin-top: 400px;
+    padding-top: 200px;
+    background-image:linear-gradient( rgba(218, 173, 134,0.5) ,rgba(251, 238, 193,0.5), )  ;
+
+
+
+}
+.productbox{
+    background-color: #f3efef;
+    width: 120%;
+    margin-left: -15%;
+    height: 400px;
+    border-radius: 10px;
+}
+h3{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #dfb49b ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 150%;
+}
+.product h3{
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 150%;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.size{
+    line-height: 200%;
+}
+.button{
+    margin-top: 20px;
+}
+.price span{
+    font-size: 70%;
+}
+
+.size li{
+    list-style: none;
+
+}
+
+
+
+
+
+
+
